@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AXamarinTestProject.LoginPage">
+  <!--Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" /-->
+  <StackLayout>
+    <Label x:Name ="Answer" Text="" HorizontalOptions="Center" VerticalOptions="Center"/>    
+    <Entry x:Name ="LoginBox" Placeholder = "Enter your login"/>
+    <Entry x:Name ="PasswordBox"  Placeholder = "Password" IsPassword ="True"/>
+    <StackLayout Orientation="Horizontal">
+      <Button Text="Enter" Clicked="Send" />
+      <Button Text="Create new account " Clicked="CreateNewAccount" />      
+    </StackLayout>
+  </StackLayout>
+</ContentPage>

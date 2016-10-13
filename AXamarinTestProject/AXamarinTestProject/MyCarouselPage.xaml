@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AXamarinTestProject.MyCarouselPage">
+  <ContentPage>
+    <ContentPage.Padding>
+      <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
+    </ContentPage.Padding>
+    <StackLayout Orientation="Vertical" HorizontalOptions ="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+      <Image Source="img.jpg" />
+
+      <Button x:Name="StateExampleButton" Text="Simple button" WidthRequest="200"   />
+    </StackLayout>
+  </ContentPage>
+  <ContentPage>
+    <ContentPage.Padding>
+      <OnPlatform x:TypeArguments="Thickness" iOS="0,40,0,0" Android="0,40,0,0" />
+    </ContentPage.Padding>
+    <StackLayout>
+      <Switch IsToggled="true" VerticalOptions="CenterAndExpand"
+             HorizontalOptions="Center" Toggled= "switcher_Toggled" />
+    </StackLayout>
+  </ContentPage>
+  
+</CarouselPage>
+
+

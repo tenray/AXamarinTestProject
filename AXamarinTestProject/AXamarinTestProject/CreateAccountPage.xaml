@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AXamarinTestProject.CreateAccountPage">
+  <TableView>
+    <TableView.Root>
+      <TableRoot>
+        <TableSection Title="Авторизация">
+          <EntryCell Label="Логин" Text="{Binding Login}" Keyboard="Default" Placeholder="Введите логин" />
+          <EntryCell Label="ПАроль" Text="{Binding Password}" Keyboard="Default" Placeholder="Введите пароль" />
+          <EntryCell Label="Имя" Text="{Binding Name}" Keyboard="Default" Placeholder="Введите ваше имя" />
+          <ViewCell>
+            <StackLayout Orientation="Horizontal">
+              <Button Text="Сохранить" Clicked="SaveFriend" />
+              <Button Text="Удалить" Clicked="DeleteFriend" />
+              <Button Text="Отмена" Clicked="Cancel" />
+            </StackLayout>            
+          </ViewCell>
+          <ViewCell>
+            <StackLayout Orientation="Horizontal">
+              <Entry x:Name ="Answer" Text="Введите свои данные для регистрации"/>
+            </StackLayout>
+          </ViewCell>
+        </TableSection>
+        <TableSection Title="">
+          <!--SwitchCell Text="Сохранить" Click/-->
+        </TableSection>
+      </TableRoot>
+    </TableView.Root>
+  </TableView>
+</ContentPage>

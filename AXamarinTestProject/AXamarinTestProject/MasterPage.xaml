@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AXamarinTestProject.MasterPage"
+             Padding="80"
+             Title="Master Page">
+  <ContentPage.Content>
+    <StackLayout>
+
+      <Label x:Name="asd"  Text="Master page" />
+
+      
+      <Button x:Name="ToCarouselButton" Text="Carousel" />
+
+
+      <Button x:Name="ToListViewButton" Text="Search film" />
+
+      <Button x:Name="Members" Text="member list" />
+
+      <Button x:Name="LogOut" Text="Log out" />
+    </StackLayout>
+  </ContentPage.Content>
+ 
+</ContentPage>
